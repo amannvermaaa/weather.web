@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1786123578370",
+    "email": "test@example.com",
+    "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "user",
+    "savedCities": [],
+    "createdAt": "2026-08-07T17:26:18.370Z"
+  },
+  {
+    "id": "1786123664922",
+    "email": "amannverma@gmail.com",
+    "password": "f7298948225be27bf643ab6ac049c6bf953ab0d6a9513786a49692941142169b",
+    "role": "user",
+    "savedCities": [],
+    "createdAt": "2026-08-07T17:27:44.922Z"
+  },
+  {
+    "id": "1786123899150",
+    "email": "vishuuuverma@gmail.com",
+    "password": "fc1f09ab08ebdd072ea6da53a5691abcc18c9163b1be1f0921a5adb50e3f5077",
+    "role": "user",
+    "savedCities": [],
+    "createdAt": "2026-08-07T17:31:39.150Z"
+  },
+  {
+    "id": "1786124161220",
+    "email": "vishuverma0515@gmail.com",
+    "password": "c010cab4e46b823eb75438baf7eb105ac497f00d9c6689b6be6b2aab72522741",
+    "role": "user",
+    "savedCities": [],
+    "createdAt": "2026-08-07T17:36:01.220Z"
+  }
+]
