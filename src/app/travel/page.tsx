@@ -14,10 +14,10 @@ export default function TravelPage() {
     if (!weather) return { score: 0, label: '', color: '' };
     const { temperature, rain, windSpeed } = weather.current;
     
-    if (rain > 5 || windSpeed > 30 || temperature > 35 || temperature < 5) {
+    if ((rain ?? 0) > 5 || windSpeed > 30 || temperature > 35 || temperature < 5) {
       return { score: 40, label: 'Not Ideal', color: 'text-red-400', bg: 'bg-red-400' };
     }
-    if (rain > 1 || windSpeed > 20 || temperature > 30 || temperature < 10) {
+    if ((rain ?? 0) > 1 || windSpeed > 20 || temperature > 30 || temperature < 10) {
       return { score: 70, label: 'Moderate', color: 'text-yellow-400', bg: 'bg-yellow-400' };
     }
     return { score: 95, label: 'Excellent', color: 'text-green-400', bg: 'bg-green-400' };
@@ -28,7 +28,7 @@ export default function TravelPage() {
     const { temperature, rain } = weather.current;
     const suggestions = ['Comfortable walking shoes', 'Power bank', 'Travel documents'];
     
-    if (rain > 0) suggestions.push('Umbrella', 'Waterproof jacket');
+    if ((rain ?? 0) > 0) suggestions.push('Umbrella', 'Waterproof jacket');
     if (temperature > 25) suggestions.push('Sunscreen', 'Sunglasses', 'Light breathable clothing');
     if (temperature < 15) suggestions.push('Warm jacket', 'Scarf', 'Gloves');
     

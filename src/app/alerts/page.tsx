@@ -26,9 +26,9 @@ export default function AlertsPage() {
       alerts.push({ type: 'warning', icon: ThermometerSun, title: "Heat Advisory", message: `High temperature of ${Math.round(current.temperature)}°C. Drink plenty of water.`, time: 'LIVE' });
     }
 
-    if (current.rain > 10) {
+    if ((current.rain ?? 0) > 10) {
       alerts.push({ type: 'danger', icon: CloudRain, title: "Flash Flood Warning", message: `Heavy rainfall detected (${current.rain}mm). Immediate risk of localized flooding in low-lying areas.`, time: 'LIVE' });
-    } else if (current.rain > 0) {
+    } else if ((current.rain ?? 0) > 0) {
       alerts.push({ type: 'info', icon: CloudRain, title: "Precipitation Advisory", message: `Light rain detected. Roads may be slippery.`, time: 'LIVE' });
     }
 
@@ -47,7 +47,7 @@ export default function AlertsPage() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
-    show: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring', stiffness: 100, damping: 15 } }
+    show: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring' as const, stiffness: 100, damping: 15 } }
   };
 
   return (

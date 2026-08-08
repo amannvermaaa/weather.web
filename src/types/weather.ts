@@ -19,6 +19,7 @@ export interface WeatherData {
     visibility?: number; // Open-Meteo current doesn't always have visibility directly, we might map it or omit it
     weatherCode: number;
     isDay: number;
+    rain?: number;
   };
   hourly: {
     time: string[];
