@@ -41,39 +41,5 @@ The backend is completely serverless, utilizing **Next.js API Routes** (`/api/*`
 
 4. **Attractions Explorer:**
    - Using geolocation, the app suggests nearby famous landmarks, distances, and Wikipedia descriptions for travelers checking the weather of their destination.
-
-## 🚀 Getting Started
-
-### Prerequisites
-Make sure you have Node.js (v18+) installed on your machine.
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/weatherweb.git
-   cd weatherweb
-   ```
-
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Set up your environment variables:
-   Create a `.env.local` file in the root directory and add the following keys:
-   ```env
-   # Your Google Gemini API Key for the Chat Assistant
-   GEMINI_API_KEY=your_gemini_api_key_here
-
-   # For Admin Email Notifications on Signup
-   EMAIL_USER=your_gmail_address
-   EMAIL_APP_PASSWORD=your_16_digit_google_app_password
-   ```
-
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+     
+🔴 Live Demo: https://weatherwebworld.netlify.app/
